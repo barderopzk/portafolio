@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap'); 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+.header {
+  width: 100vw;
+  height: 100vh;
+  background-color: #59337e;
+  color: aliceblue;
+}
+.name span{
+  color: chartreuse;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+.name {
+  margin-top: -7;
+}
+.etiqueta {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+.etiqueta li {
+  list-style: none;
+}
+.etiqueta a {
+  color: aliceblue;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+.etiqueta .lio {
+  color: rgb(109, 218, 109);
+}
+.etiqueta a:hover {
+  background-color: chartreuse;
+  color: #1b1027;
+  transition: ease-in .3s;
+}
+.main {
+  margin: 0 auto;
+  width: -50vh;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(2fr);
+align-items: center;
+}
+h1 {
+font-size: 4em;
+}
+span {
+  color: chartreuse;
+}
+p {
+  height: 4rem;
+}
+.download-cv {
+  padding: 10px 20px;
+  background-color: chartreuse;
+  border: none;
+  border-radius: 20px;
+  margin-top: 50px;
+ cursor: pointer;
+ box-shadow: 1px 3px 11px -5px rgb(rgb(79, 228, 178), rgb(199, 27, 214), rgb(86, 228, 216));
+}
+.download-cv:hover {
+  background-color: #fff;
+  box-shadow: none;
+}
+.main img {
+  width: 600px;
+  border: 7px solid rgb(147, 223, 71);
+  height: 600px;
+  z-index: 1;
+}
+.main{
+  display: flex;
+  justify-content: end;
+  margin-right: 2rem;
+}
+.about {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  width: 100vw;
+  align-items: center;
+  background-color: #21094E;
+}
+ .about img {
+  width: 100%;
+  grid-column: 1/5;
+ }
+.abotu-info {
+  grid-column: 5/10;
+  padding: 3em;
+}
+.abotu-info h2 {
+  font-size: 2em;
+  color: #b589e4;
+}
+.divider {
+  height: 4px;
+  width: 62px;
+  background-color: chartreuse;
+  margin-top: 5px;
+  margin-bottom: 2em;
+}
+
+.about p {
+ margin-bottom: 1em; 
+ color: #9dcfa3;
+}
+.portafolio {
+  width: 100vw;
+  background-color:  #59337e;
+  color: #fffefe;
+}
+.portafolio-heading {
+  width: 100vw;
+  padding: 5em;
+}
+.portafolio-headings h2 {
+  font-size: 2em;
+}
+.portafolio .container {
+  width: 80vw;
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.card {
+  width: 300px;
+  color: #fff;
+  height: 350px;
+  background-color: #352c4e;
+  margin: 2em;
+}
+.card_img {
+  width: 100%;
+  height: 450px;
+  background-image: url(../img/programation.jpg);
+  background-size: cover;
+}
+.card_title {
+  padding: 20px;
+}
+.projects-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+.projects-links a {
+  color: #88fc65;
+  text-decoration: none;
+}
+.projects-links i {
+  font-size: 1.5em;
+}
+.card .project-details {
+  display: flex;
+  align-self: center;
+  margin: 5em;
+  width: 40%;
+  text-align: center;
+}
+.card .project-details a {
+  text-decoration: none;
+  color: #20162b;
+}
+.projects-deteails-content {
+ display: flex;
+ width: 100%;
+ justify-content: center;
+ margin-top: 1em; 
+}
+.container-contact {
+  padding: 3em;
+  margin: 0 auto;
+}
+
+.section, 
+.contacts {
+  background-color: #21094E;
+}
+.tercer_titulo {
+  color: #fafafa;
+}
+.main_input .input_text{
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+.input_text{
+  position: relative;
+
+}
+.input_text input {
+  width: 350px;
+  height: 60px;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 0 15px;
+  border:  2px solid #472a96;
+  background: transparent;
+  color:  #fafafa;
+  outline: none;
+}
+.input_text label {
+  position: absolute;
+  top :50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color:  #52de52;
+  font-size: 19px ;
+  pointer-events: none;
+  transition:  .3s;
+}
+.input_text :focus ~  label{
+top:  0;
+left: 15px;
+font-size: 16px;
+padding: 0 2px;
+background-color: #121212;
+}
+
+.nombre_text{
+  font-family: "Segoe UI";
+  color: #040404;
+  font-size: 1.3rem;
+  width: 50rem;
+  height: 10rem;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  border-radius: 2rem;
+  border: 8px inset #6e47d8;
+  background-color: transparent;
+}
